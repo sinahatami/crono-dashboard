@@ -12,7 +12,7 @@ export function NavItem({
   isOpen = false,
 }: NavItemInterface) {
   const activeClasses = isActive
-    ? 'bg-white text-primary font-semibold'
+    ? 'bg-white text-primary'
     : 'text-gray-500 hover:bg-gray-100';
 
   return (
@@ -24,7 +24,7 @@ export function NavItem({
       }`}
     >
       {isActive && (
-        <div className="absolute left-0 top-0 h-full w-1 bg-primary-dark rounded-r-full"></div>
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 h-3/4 w-1 bg-primary-dark rounded-r-full"></div>
       )}
 
       <Icon className="w-5 h-5 flex-shrink-0 ml-2" />
