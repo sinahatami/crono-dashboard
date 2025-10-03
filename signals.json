@@ -4,7 +4,7 @@
     "name": "Robert Smith",
     "description": "<strong>Robert Smith</strong> changed role from SDR to Senior SDR at WeRoad",
     "title": "Role change",
-    "imagePath": "./src/assets/avatars/amazon.png",
+    "imagePath": "amazon.png",
     "date": "Apr 2, 2025",
     "state": "In sequence",
     "read": false
@@ -14,7 +14,7 @@
     "name": "Robert Smith",
     "description": "<strong>Robert Smith</strong> changed role from SDR to Senior SDR at WeRoad",
     "title": "Company change",
-    "imagePath": "./src/assets/avatars/amazon.png",
+    "imagePath": "amazon.png",
     "date": "Apr 2, 2025",
     "state": "In sequence",
     "read": false
@@ -24,7 +24,7 @@
     "name": "Robert Smith",
     "description": "<strong>Robert Smith</strong> changed role from SDR to Senior SDR at WeRoad",
     "title": "Role change",
-    "imagePath": "./src/assets/avatars/amazon.png",
+    "imagePath": "amazon.png",
     "date": "Apr 2, 2025",
     "state": null,
     "read": false
@@ -34,7 +34,7 @@
     "name": "Amazon",
     "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
     "title": "Website view",
-    "imagePath": "./src/assets/avatars/amazon.png",
+    "imagePath": "amazon.png",
     "date": "Apr 2, 2025",
     "state": null,
     "read": false
@@ -44,7 +44,7 @@
     "name": "Amazon",
     "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
     "title": "Website view",
-    "imagePath": "./src/assets/avatars/amazon.png",
+    "imagePath": "amazon.png",
     "date": "Apr 2, 2025",
     "state": null,
     "read": false
@@ -54,7 +54,7 @@
     "name": "Amazon",
     "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
     "title": "Website view",
-    "imagePath": "./src/assets/avatars/amazon.png",
+    "imagePath": "amazon.png",
     "date": "Apr 2, 2025",
     "state": null,
     "read": false
@@ -64,7 +64,7 @@
     "name": "Amazon",
     "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
     "title": "Website view",
-    "imagePath": "./src/assets/avatars/amazon.png",
+    "imagePath": "amazon.png",
     "date": "Apr 2, 2025",
     "state": null,
     "read": false
@@ -74,7 +74,7 @@
     "name": "Amazon",
     "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
     "title": "Website view",
-    "imagePath": "./src/assets/avatars/amazon.png",
+    "imagePath": "amazon.png",
     "date": "Apr 2, 2025",
     "state": null,
     "read": false
@@ -84,7 +84,7 @@
     "name": "Amazon",
     "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
     "title": "Website view",
-    "imagePath": "./src/assets/avatars/amazon.png",
+    "imagePath": "amazon.png",
     "date": "Apr 2, 2025",
     "state": null,
     "read": false
@@ -94,7 +94,7 @@
     "name": "Amazon",
     "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
     "title": "Website view",
-    "imagePath": "./src/assets/avatars/amazon.png",
+    "imagePath": "amazon.png",
     "date": "Apr 2, 2025",
     "state": null,
     "read": false
@@ -104,7 +104,7 @@
     "name": "Amazon",
     "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
     "title": "Website view",
-    "imagePath": "./src/assets/avatars/amazon.png",
+    "imagePath": "amazon.png",
     "date": "Apr 2, 2025",
     "state": null,
     "read": false
@@ -114,7 +114,7 @@
     "name": "Amazon",
     "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
     "title": "Website view",
-    "imagePath": "./src/assets/avatars/amazon.png",
+    "imagePath": "amazon.png",
     "date": "Apr 2, 2025",
     "state": null,
     "read": false
