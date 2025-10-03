@@ -1,4 +1,4 @@
-export interface Signal {
+export interface SignalInterface {
     id: string;
     name: string;
     description: string;

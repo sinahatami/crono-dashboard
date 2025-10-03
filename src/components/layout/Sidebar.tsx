@@ -15,20 +15,10 @@ import { BsBarChart } from 'react-icons/bs';
 import logo from '../../assets/crono-logo.svg';
 import { NavItem } from './NavItem';
 import { IoFlashOutline } from 'react-icons/io5';
+import type { NavItemDataInterface } from '../../types/interfaces/navItemDataInterface';
+import type { SidebarInterface } from '../../types/interfaces/sidebarInterface';
 
-interface SidebarProps {
-  isCollapsed: boolean;
-  setIsCollapsed: (isCollapsed: boolean) => void;
-}
-
-interface NavItemData {
-  label: string;
-  icon: React.ElementType;
-  notificationCount?: number;
-  subItems?: { label: string }[];
-}
-
-const navItems: NavItemData[] = [
+const navItems: NavItemDataInterface[] = [
   { label: 'Dashboard', icon: GrTemplate },
   { label: 'Find New', icon: LuSearch },
   { label: 'Lists', icon: GrTemplate },
@@ -44,7 +34,7 @@ const navItems: NavItemData[] = [
   },
 ];
 
-export function Sidebar({ isCollapsed, setIsCollapsed }: SidebarProps) {
+export function Sidebar({ isCollapsed, setIsCollapsed }: SidebarInterface) {
   const [activeItem, setActiveItem] = useState('Dashboard');
   const [isAnalyticsOpen, setAnalyticsOpen] = useState(false);
 
@@ -58,7 +48,7 @@ export function Sidebar({ isCollapsed, setIsCollapsed }: SidebarProps) {
         isCollapsed ? 'w-20' : 'w-64'
       }`}
     >
-      <div className="p-4 border-b border-gray-200 flex items-center justify-between">
+      <div className="p-6 border-gray-200 flex items-center justify-between">
         <img
           src={logo}
           alt="Crono Logo"
@@ -68,7 +58,7 @@ export function Sidebar({ isCollapsed, setIsCollapsed }: SidebarProps) {
         />
         <button
           onClick={() => setIsCollapsed(!isCollapsed)}
-          className="p-1.5 rounded-lg hover:bg-gray-100"
+          className="p-1.5 rounded-2xl bg-gray-100"
         >
           {isCollapsed ? (
             <LuChevronsRight className="h-5 w-5 text-gray-600" />
@@ -122,9 +112,7 @@ export function Sidebar({ isCollapsed, setIsCollapsed }: SidebarProps) {
             isCollapsed ? 'opacity-0' : 'opacity-100'
           }`}
         >
-          <p className="font-semibold text-base text-gray-800">
-            William Robertson
-          </p>
+          <p className="text-base text-gray-800">William Robertson</p>
           <p className="text-base text-gray-500">Sales</p>
         </div>
       </div>

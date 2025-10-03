@@ -1,14 +1,13 @@
 import { useState, useRef, useEffect } from 'react';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { LuTrash2 } from 'react-icons/lu';
-import type { Signal } from '../../types';
+import type { SignalInterface } from '../../types/interfaces/signalInterface';
+import type { SignalsWidgetInterface } from '../../types/interfaces/signalsWidgetInterface';
 
-interface SignalsWidgetProps {
-  signals: Signal[];
-}
-
-export function SignalsWidget({ signals: initialSignals }: SignalsWidgetProps) {
-  const [signals, setSignals] = useState<Signal[]>([]);
+export function SignalsWidget({
+  signals: initialSignals,
+}: SignalsWidgetInterface) {
+  const [signals, setSignals] = useState<SignalInterface[]>([]);
   const [activeTooltip, setActiveTooltip] = useState<string | null>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
 
@@ -52,21 +51,25 @@ export function SignalsWidget({ signals: initialSignals }: SignalsWidgetProps) {
   };
 
   return (
-    <div className="bg-white rounded-3xl border border-gray-200 shadow-sm flex flex-col h-[520px]">
-      <div className="px-6 mt-2 flex items-center space-x-2">
+    <div className="bg-white rounded-3xl border border-gray-200 shadow-sm flex flex-col h-[32rem]">
+      <div className="px-6 mt-4 flex items-center space-x-2">
         <h3 className="text-lg font-semibold text-gray-700">Signals</h3>
         {unreadCount > 0 && (
-          <span className="bg-amber-400 text-amber-100 text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+          <span className="bg-amber-400 text-amber-100 text-xs font-bold rounded-full h-7 w-7 flex items-center justify-center">
             {unreadCount}
           </span>
         )}
       </div>
-      <p className="px-6 text-sm text-gray-500 flex-shrink-0">
+      <p className="px-6 mt- text-lg text-gray-500 flex-shrink-0">
         Never miss a single opportunity: check out your top signals from your
         1st-degree LinkedIn connections.
       </p>
 
-      <div className="flex-1 overflow-y-auto">
+      <div
+        className="flex-1 overflow-y-auto [&::-webkit-scrollbar]:w-2 
+              [&::-webkit-scrollbar-thumb]:bg-gray-300 
+              [&::-webkit-scrollbar-thumb]:rounded-full"
+      >
         <div className="divide-y divide-gray-200">
           {signals.map((signal) => (
             <div
@@ -88,7 +91,7 @@ export function SignalsWidget({ signals: initialSignals }: SignalsWidgetProps) {
                 </div>
                 <div>
                   <p
-                    className="text-sm text-gray-800"
+                    className="text-lg text-gray-800"
                     dangerouslySetInnerHTML={{ __html: signal.description }}
                   />
                   <div className="flex items-center text-xs text-gray-500 mt-1 space-x-2">
@@ -120,12 +123,12 @@ export function SignalsWidget({ signals: initialSignals }: SignalsWidgetProps) {
                         activeTooltip === signal.id ? null : signal.id
                       )
                     }
-                    className="bg-primary text-white font-semibold px-4 py-1.5 rounded-3xl text-sm"
+                    className="bg-primary hover:bg-primary-dark text-white px-6 py-1.5 rounded-3xl text-sm"
                   >
                     Action
                   </button>
                   {activeTooltip === signal.id && (
-                    <div className="absolute right-0 top-full mt-2 w-40 bg-white rounded-lg shadow-xl border border-gray-200 z-10">
+                    <div className="absolute right-0 top-full mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 z-10">
                       <button
                         onClick={() => handleAction(signal.id, 'complete')}
                         className="group flex items-center justify-between w-full px-4 py-2 text-sm text-gray-700 hover:bg-primary/10 hover:text-primary-dark rounded-t-lg"

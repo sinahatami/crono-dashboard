@@ -1,16 +1,5 @@
-import React from 'react';
 import { LuChevronDown } from 'react-icons/lu';
-
-interface NavItemProps {
-  icon: React.ElementType;
-  label: string;
-  isActive?: boolean;
-  notificationCount?: number;
-  isCollapsed: boolean;
-  onClick: () => void;
-  hasSubmenu?: boolean;
-  isOpen?: boolean;
-}
+import type { NavItemInterface } from '../../types/interfaces/navItemInterface';
 
 export function NavItem({
   icon: Icon,
@@ -21,10 +10,10 @@ export function NavItem({
   onClick,
   hasSubmenu = false,
   isOpen = false,
-}: NavItemProps) {
+}: NavItemInterface) {
   const activeClasses = isActive
     ? 'bg-white text-primary font-semibold'
-    : 'text-gray-600 hover:bg-gray-100';
+    : 'text-gray-500 hover:bg-gray-100';
 
   return (
     <a

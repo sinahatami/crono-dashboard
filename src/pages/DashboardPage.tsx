@@ -4,11 +4,11 @@ import { PerformanceWidget } from '../components/dashboard/PerformanceWidget';
 import { RepliesWidget } from '../components/dashboard/RepliesWidget';
 import { SignalsWidget } from '../components/dashboard/SignalsWidget';
 import { TasksWidget } from '../components/dashboard/TasksWidget';
-import type { Signal } from '../types';
 import { OnboardingWidget } from '../components/dashboard/OnboardingWidget';
+import type { SignalInterface } from '../types/interfaces/signalInterface';
 
 export function DashboardPage() {
-  const [signals, setSignals] = useState<Signal[]>([]);
+  const [signals, setSignals] = useState<SignalInterface[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -17,7 +17,7 @@ export function DashboardPage() {
       try {
         const response = await fetch('/signals.json');
         if (!response.ok) throw new Error('Failed to fetch signals');
-        const data: Signal[] = await response.json();
+        const data: SignalInterface[] = await response.json();
         setSignals(data);
       } catch (err) {
         setError(

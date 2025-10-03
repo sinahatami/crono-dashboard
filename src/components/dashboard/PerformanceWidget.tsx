@@ -21,9 +21,9 @@ const StatItem = ({
     skyBlue: { text: 'text-sky-500', progress: 'bg-sky-500' },
     blue: { text: 'text-blue-500', progress: 'bg-blue-500' },
     purple: { text: 'text-purple-500', progress: 'bg-purple-500' },
-    green: { text: 'text-green-500', progress: 'bg-green-500' },
-    orange: { text: 'text-orange-500', progress: 'bg-orange-500' },
-    pink: { text: 'text-pink-500', progress: 'bg-pink-500' },
+    green: { text: 'text-green-600', progress: 'bg-green-600' },
+    orange: { text: 'text-orange-300', progress: 'bg-orange-300' },
+    pink: { text: 'text-pink-400', progress: 'bg-pink-400' },
   };
   const theme = colorClasses[color] || colorClasses.purple;
 
@@ -31,8 +31,8 @@ const StatItem = ({
     <div className="border border-gray-200 rounded-lg p-2 space-y-2">
       {/* ROW 1: Label and Info Icon */}
       <div className="flex items-center justify-between">
-        <span className="text-xs font-medium text-gray-500">{label}</span>
-        <LuInfo className="h-4 w-4 text-gray-400" />
+        <span className="text-md font-medium text-gray-800">{label}</span>
+        <LuInfo className="h-4 w-4 text-gray-600" />
       </div>
 
       {/* ROW 2: Main Icon and Value/Max Text */}
@@ -74,15 +74,15 @@ export function PerformanceWidget() {
     <div className="mt-3 relative bg-white p-4 rounded-3xl border border-gray-200 shadow-sm">
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
-        <h3 className="text-lg font-semibold text-gray-700">
+        <h3 className="text-lg font-semibold text-gray-800">
           May's performance
         </h3>
-        <button className="text-sm font-semibold text-primary-dark hover:underline flex items-center">
+        <button className="text-lg font-normal text-primary-dark flex items-center">
           Edit KPIs <LuPencil className="ml-1 h-3 w-3" />
         </button>
       </div>
       {/* 3x2 Grid for Stats */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-1 xl:grid-cols-2 gap-4">
         <StatItem
           icon={LuUser}
           label="Contacts engaged"

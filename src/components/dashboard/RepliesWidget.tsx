@@ -11,10 +11,10 @@ export function RepliesWidget() {
     <div className="bg-white p-4 rounded-3xl border border-gray-200 shadow-sm">
       {/* Header Section */}
       <div className="flex justify-between items-center">
-        <h3 className="text-lg font-semibold text-gray-700">Replies</h3>
+        <h3 className="text-lg font-semibold text-gray-800">Replies</h3>
         <a
           href="#"
-          className="text-sm font-semibold text-primary-dark hover:underline flex items-center"
+          className="text-lg font-normal text-primary-dark flex items-center"
         >
           Open inbox
           <RiArrowDropRightLine className="h-6 w-6" />
@@ -28,7 +28,7 @@ export function RepliesWidget() {
           <div className="bg-primary/20 p-3 rounded-full">
             <PiMailbox className="h-6 w-6 text-primary-dark" />
           </div>
-          <p className="text-5xl font-bold text-gray-800 ml-4">24</p>
+          <p className="text-5xl font-bold text-gray-700 ml-4">24</p>
         </div>
 
         {/* Right Side: Company Avatars */}

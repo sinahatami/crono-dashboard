@@ -24,7 +24,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         isCollapsed={isCollapsed}
         setIsCollapsed={setIsSidebarManuallyCollapsed}
       />
-      <main className="flex-1 pt-6 px-8 bg-gray-50">{children}</main>
+      <main className="flex-1 pt-4 pt-4 px-8 bg-gray-50">{children}</main>
     </div>
   );
 }
