@@ -15,7 +15,7 @@ export function DashboardPage() {
   useEffect(() => {
     const fetchSignals = async () => {
       try {
-        const response = await fetch('/signals.json');
+        const response = await fetch('./signals.json');
         if (!response.ok) throw new Error('Failed to fetch signals');
         const data: SignalInterface[] = await response.json();
         setSignals(data);
