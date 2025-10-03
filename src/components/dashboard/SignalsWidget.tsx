@@ -3,6 +3,7 @@ import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { LuTrash2 } from 'react-icons/lu';
 import type { SignalInterface } from '../../types/interfaces/signalInterface';
 import type { SignalsWidgetInterface } from '../../types/interfaces/signalsWidgetInterface';
+import amazon from '../../assets/avatars/amazon.png';
 
 export function SignalsWidget({
   signals: initialSignals,
@@ -81,7 +82,7 @@ export function SignalsWidget({
               <div className="flex items-center space-x-3">
                 <div className="relative">
                   <img
-                    src={signal.imagePath}
+                    src={amazon}
                     alt={signal.name}
                     className="h-10 w-10 rounded-full object-cover"
                   />

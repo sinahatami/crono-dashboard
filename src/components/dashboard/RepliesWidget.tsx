@@ -33,25 +33,26 @@ export function RepliesWidget() {
 
         {/* Right Side: Company Avatars */}
         <div className="flex -space-x-3 items-center">
+          {/* STEP 2: Use the imported variables in the 'src' attribute */}
           <img
             src={redditLogo}
             alt="Reddit"
-            className="h-8 w-8 rounded-full border-1 border-white object-cover relative z-10"
+            className="h-8 w-8 rounded-full border-2 border-white object-cover relative z-40 bg-white"
           />
           <img
             src={amazonLogo}
             alt="Amazon"
-            className="h-8 w-8 rounded-full border-1 border-white object-cover relative z-20"
+            className="h-8 w-8 rounded-full border-2 border-white object-cover relative z-30 bg-white"
           />
           <img
             src={mcdonaldsLogo}
-            alt="Macdonald's"
-            className="h-8 w-8 rounded-full border-1 border-white object-cover relative z-30 bg-white"
+            alt="McDonald's"
+            className="h-8 w-8 rounded-full border-2 border-white object-cover relative z-20 bg-white"
           />
           <img
             src={mediumLogo}
             alt="Medium"
-            className="h-8 w-8 rounded-full border-1 border-white object-cover relative z-40"
+            className="h-8 w-8 rounded-full border-2 border-white object-cover relative z-10 bg-white"
           />
         </div>
       </div>
