@@ -11,10 +11,10 @@ import { MdTimeline } from 'react-icons/md';
 import { FaTasks, FaCoins } from 'react-icons/fa';
 import { PiMailbox } from 'react-icons/pi';
 import { BsBarChart } from 'react-icons/bs';
-import { TiFlash } from 'react-icons/ti';
 
 import logo from '../../assets/crono-logo.svg';
 import { NavItem } from './NavItem';
+import { IoFlashOutline } from 'react-icons/io5';
 
 interface SidebarProps {
   isCollapsed: boolean;
@@ -110,12 +110,11 @@ export function Sidebar({ isCollapsed, setIsCollapsed }: SidebarProps) {
       </nav>
 
       <div className="flex items-center border-t border-gray-200">
-        <div className={`p-4 overflow-hidden`}>
+        <div className={`p-3 overflow-hidden`}>
           <div className="flex items-center">
-            <div className="h-10 w-10 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0">
-              <TiFlash className="h-6 w-6 text-slate-500" />
+            <div className="h-11 w-11 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0">
+              <IoFlashOutline className="h-6 w-6 text-slate-500" />
             </div>
-            <div className={`ml-3 ...`}></div>
           </div>
         </div>
         <div
@@ -123,10 +122,10 @@ export function Sidebar({ isCollapsed, setIsCollapsed }: SidebarProps) {
             isCollapsed ? 'opacity-0' : 'opacity-100'
           }`}
         >
-          <p className="font-semibold text-sm text-gray-800">
+          <p className="font-semibold text-base text-gray-800">
             William Robertson
           </p>
-          <p className="text-xs text-gray-500">Sales</p>
+          <p className="text-base text-gray-500">Sales</p>
         </div>
       </div>
     </aside>
