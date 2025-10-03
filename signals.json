@@ -1,0 +1,122 @@
+[
+  {
+    "id": "sig_1",
+    "name": "Robert Smith",
+    "description": "<strong>Robert Smith</strong> changed role from SDR to Senior SDR at WeRoad",
+    "title": "Role change",
+    "imagePath": "../src/assets/avatars/amazon.png",
+    "date": "Apr 2, 2025",
+    "state": "In sequence",
+    "read": false
+  },
+  {
+    "id": "sig_2",
+    "name": "Robert Smith",
+    "description": "<strong>Robert Smith</strong> changed role from SDR to Senior SDR at WeRoad",
+    "title": "Company change",
+    "imagePath": "../src/assets/avatars/amazon.png",
+    "date": "Apr 2, 2025",
+    "state": "In sequence",
+    "read": false
+  },
+  {
+    "id": "sig_3",
+    "name": "Robert Smith",
+    "description": "<strong>Robert Smith</strong> changed role from SDR to Senior SDR at WeRoad",
+    "title": "Role change",
+    "imagePath": "../src/assets/avatars/amazon.png",
+    "date": "Apr 2, 2025",
+    "state": null,
+    "read": false
+  },
+  {
+    "id": "sig_4",
+    "name": "Amazon",
+    "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
+    "title": "Website view",
+    "imagePath": "../src/assets/avatars/amazon.png",
+    "date": "Apr 2, 2025",
+    "state": null,
+    "read": false
+  },
+  {
+    "id": "sig_5",
+    "name": "Amazon",
+    "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
+    "title": "Website view",
+    "imagePath": "../src/assets/avatars/amazon.png",
+    "date": "Apr 2, 2025",
+    "state": null,
+    "read": false
+  },
+  {
+    "id": "sig_6",
+    "name": "Amazon",
+    "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
+    "title": "Website view",
+    "imagePath": "../src/assets/avatars/amazon.png",
+    "date": "Apr 2, 2025",
+    "state": null,
+    "read": false
+  },
+  {
+    "id": "sig_7",
+    "name": "Amazon",
+    "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
+    "title": "Website view",
+    "imagePath": "../src/assets/avatars/amazon.png",
+    "date": "Apr 2, 2025",
+    "state": null,
+    "read": false
+  },
+  {
+    "id": "sig_8",
+    "name": "Amazon",
+    "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
+    "title": "Website view",
+    "imagePath": "../src/assets/avatars/amazon.png",
+    "date": "Apr 2, 2025",
+    "state": null,
+    "read": false
+  },
+  {
+    "id": "sig_9",
+    "name": "Amazon",
+    "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
+    "title": "Website view",
+    "imagePath": "../src/assets/avatars/amazon.png",
+    "date": "Apr 2, 2025",
+    "state": null,
+    "read": false
+  },
+  {
+    "id": "sig_10",
+    "name": "Amazon",
+    "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
+    "title": "Website view",
+    "imagePath": "../src/assets/avatars/amazon.png",
+    "date": "Apr 2, 2025",
+    "state": null,
+    "read": false
+  },
+  {
+    "id": "sig_11",
+    "name": "Amazon",
+    "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
+    "title": "Website view",
+    "imagePath": "../src/assets/avatars/amazon.png",
+    "date": "Apr 2, 2025",
+    "state": null,
+    "read": false
+  },
+  {
+    "id": "sig_12",
+    "name": "Amazon",
+    "description": "<strong>Amazon</strong> viewed <strong>2 pages</strong> of your website for 65 sec",
+    "title": "Website view",
+    "imagePath": "../src/assets/avatars/amazon.png",
+    "date": "Apr 2, 2025",
+    "state": null,
+    "read": false
+  }
+]
